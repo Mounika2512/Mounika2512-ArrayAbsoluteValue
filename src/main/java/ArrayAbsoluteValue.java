@@ -1,4 +1,3 @@
-
 public class ArrayAbsoluteValue {
     /**
      * Given an array of integers 'nums', produce an array of integers composed of the absolute values of all the
@@ -9,6 +8,13 @@ public class ArrayAbsoluteValue {
      * @return the absolute value array of nums.
      */
     public int[] getArrayAbs(int[] nums){
-        return null;
+        if (nums == null) {
+            return null; 
+        }
+        int[] absArray = new int[nums.length]; 
+        for (int i = 0; i < nums.length; i++) {
+            absArray[i] = Math.abs(nums[i]); 
+        }
+        return absArray; 
     }
 }
